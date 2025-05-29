@@ -1,2 +1,2 @@
-# portfolio_site
-Personal Portfolio Website
+# Portfolio Website
+My Personal Portfolio Website used to showcase my data projects.
