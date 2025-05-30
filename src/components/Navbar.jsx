@@ -22,12 +22,12 @@ export const Navbar = ({menuOpen, setMenuOpen}) => {
                 <div className="flex items-center justify-between h-14">
                     <a href="#home" className="relative flex items-center">
                         <span className={`text-xl font-bold text-black transition-opacity duration-300 ${isScrolled ? 'opacity-0' : 'opacity-100'}`}>
-                            Marcus<span className="text-[#353935]">Portfolio</span>
+                            Marcus<span className="text-[#D97757]">Portfolio</span>
                         </span>
                         <img 
                             src="/LogoFilled.png"
                             alt="Logo"
-                            className={`absolute pl-15 left-0 h-10 w-auto transition-opacity duration-300 ${isScrolled ? 'opacity-100' : 'opacity-0'}`}
+                            className={`absolute left-0 h-10 w-auto transition-opacity duration-300 ${isScrolled ? 'opacity-100' : 'opacity-0'}`}
                         />
                     </a>
 
