@@ -5,7 +5,7 @@ export const Home = () => {
         <section id="home" className="min-h-screen flex items-center justify-center relative">
             <RevealOnScroll>
                 <div className="text-center z-10 px-4">
-                    <h1 className="text-4xl md:text-6xl font-bold mb-15 leading-right">
+                    <h1 className="text-4xl md:text-6xl font-bold mb-15 leading-right font-['P22_Mackinac_Pro']">
                         Transforming <span className="text-gray-600">Data</span> into <span className="text-gray-600">Insights</span>
                     </h1>
 

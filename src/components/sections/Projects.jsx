@@ -1,25 +1,41 @@
 import { RevealOnScroll } from "../RevealOnScroll";
+import { ProjectCard } from "../ProjectCard";
 
 export const Projects = () => {
+    const projects = [
+        {
+            title: "Portfolio Website",
+            description: "Portfolio site project built with React, Tailwind CSS and Vite. This is primarily a learning project to practice my skills and showcase my projects. As a non-developer, this was built using various AI tools, such as bolt.ai for protoyping and cursor for developing.",
+            imageUrl: "/PortfolioSite.png",
+            githubUrl: "https://github.com/marcuse418/portfolio_site"
+        },
+        {
+            title: "Project 2",
+            description: "A brief description of your second project. Explain what it does and what technologies you used.",
+            imageUrl: "/path-to-your-project-image.jpg",
+            githubUrl: "https://github.com/your-username/project-2"
+        }
+    ];
+
     return (
         <section id="projects" className="min-h-screen flex items-center justify-center relative">
             <RevealOnScroll>
-            <div className="container mx-auto px-4 py-16">
-                <h2 className="text-4xl md:text-6xl font-bold mb-6 text-center">
-                    Projects
-                </h2>
-                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-8">
-                    <div className="glass-effect p-6 rounded-lg shadow-lg">
-                        <h3 className="text-2xl font-bold mb-2">Project 1</h3>
-                        <p className="text-gray-600">Description of Project 1</p>
-                        <a href="https://github.com/your-username/project-1" target="_blank" rel="noopener noreferrer" className="text-blue-500 hover:text-blue-700">View on GitHub</a>
+                <div className="container mx-auto px-4 py-16">
+                    <h2 className="text-4xl md:text-6xl font-bold mb-6 text-center">
+                        Projects
+                    </h2>
+                    <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-8">
+                        {projects.map((project, index) => (
+                            <ProjectCard
+                                key={index}
+                                title={project.title}
+                                description={project.description}
+                                imageUrl={project.imageUrl}
+                                githubUrl={project.githubUrl}
+                            />
+                        ))}
                     </div>
-                    <div className="glass-effect p-6 rounded-lg shadow-lg">
-                        <h3 className="text-2xl font-bold mb-2">Project 2</h3>
-                        <p className="text-gray-600">Description of Project 1</p>
-                    </div> 
                 </div>
-            </div>
             </RevealOnScroll>
         </section>
     );
