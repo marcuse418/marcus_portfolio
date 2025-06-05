@@ -22,7 +22,7 @@ export const Navbar = ({menuOpen, setMenuOpen}) => {
                 <div className="flex items-center justify-between h-14">
                     <a href="#home" className="relative flex items-center">
                         <span className={`text-xl font-bold text-black transition-opacity duration-300 ${isScrolled ? 'opacity-0' : 'opacity-100'}`}>
-                            M Elliott
+                            Marcus Elliott
                         </span>
                         <img 
                             src="/Logo3.png"
