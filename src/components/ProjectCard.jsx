@@ -3,11 +3,12 @@ import React from 'react';
 export const ProjectCard = ({ title, description, imageUrl, githubUrl, imageFit = 'contain' }) => {
     return (
         <div className="glass-effect bg-white p-6 rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300 flex flex-col h-full">
-            <div className="relative w-full h-72 mb-4 overflow-hidden rounded-lg flex items-center justify-center bg-gray-100">
+            <div className="relative w-full h-90 mb-4 overflow-hidden rounded-lg bg-gray-100 flex items-center justify-center">
                 <img 
                     src={imageUrl} 
                     alt={title}
-                    className={`w-full h-full object-${imageFit} object-center`}
+                    className={`max-w-full max-h-full object-${imageFit}`}
+                    loading="lazy"
                 />
             </div>
             <h3 className="text-2xl font-bold mb-2">{title}</h3>
