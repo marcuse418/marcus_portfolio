@@ -30,6 +30,7 @@ export const Home = () => {
                 style={{
                     backgroundImage: 'url(/bgimage.png)',
                     backgroundSize: '160%',
+                    backgroundBlendMode: 'multiply',
                     backgroundPosition: 'center',
                     backgroundRepeat: 'no-repeat'
                 }}

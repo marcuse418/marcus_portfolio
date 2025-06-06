@@ -1,13 +1,13 @@
 import React from 'react';
 
-export const ProjectCard = ({ title, description, imageUrl, githubUrl }) => {
+export const ProjectCard = ({ title, description, imageUrl, githubUrl, imageFit = 'contain' }) => {
     return (
         <div className="glass-effect bg-white p-6 rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300 flex flex-col h-full">
-            <div className="relative w-full h-48 mb-4 overflow-hidden rounded-lg">
+            <div className="relative w-full h-72 mb-4 overflow-hidden rounded-lg flex items-center justify-center bg-gray-100">
                 <img 
                     src={imageUrl} 
                     alt={title}
-                    className="w-full h-full object-cover"
+                    className={`w-full h-full object-${imageFit} object-center`}
                 />
             </div>
             <h3 className="text-2xl font-bold mb-2">{title}</h3>
@@ -31,4 +31,4 @@ export const ProjectCard = ({ title, description, imageUrl, githubUrl }) => {
             )}
         </div>
     );
-}; 
+};
