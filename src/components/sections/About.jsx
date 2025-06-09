@@ -8,11 +8,20 @@ export const About = () => {
                     <h2 className="text-4xl md:text-6xl font-bold mb-6">
                         About Me
                     </h2>
-                    <div className="glass-effect bg-white p-6 rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300 flex flex-col h-full">
-                        <div className="space-y-4">
-                            <p className="text-black flex-grow font-medium">
-                                If keen to learn more, select one of the communications options below.
-                            </p>
+                    <div className="flex flex-col md:flex-row items-center gap-6">
+                        <div className="w-48 h-48 md:w-64 md:h-64 flex-shrink-0">
+                            <img 
+                                src="/profilepic2.jpg" 
+                                alt="Profile" 
+                                className="w-full h-full object-cover rounded-full shadow-lg hover:shadow-xl duration-300 transition-shadow"
+                            />
+                        </div>
+                        <div className="glass-effect bg-white p-6 rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300 flex-grow">
+                            <div className="space-y-4">
+                                <p className="text-black font-medium">
+                                    If keen to learn more, select one of the communications options below.
+                                </p>
+                            </div>
                         </div>
                     </div>
                 </div>

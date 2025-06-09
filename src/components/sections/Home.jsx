@@ -2,21 +2,21 @@ import { RevealOnScroll } from "../RevealOnScroll";
 
 export const Home = () => {
     return (
-        <section id="home" className="min-h-screen flex relative">
+        <section id="home" className="min-h-screen flex flex-col md:flex-row relative items-center justify-center">
             {/* Left side - Content */}
-            <div className="w-2/3 flex items-center justify-center p-8">
+            <div className="w-full md:w-2/3 flex items-center justify-center p-4 md:p-8">
                 <RevealOnScroll>
-                    <div className="text-left z-10">
-                        <h1 className="text-4xl md:text-6xl font-bold mb-15 leading-right font-['Souvenir']">
+                    <div className="text-center md:text-left z-10">
+                        <h1 className="text-3xl sm:text-4xl md:text-6xl font-bold mb-8 md:mb-15 leading-tight font-['Souvenir']">
                             Transforming <span className="text-[#636A63]">Data</span> into <span className="text-[#636A63]">Insights</span>
                         </h1>
 
-                        <div className="flex gap-5">
-                            <a href="#projects" className="border border-black/20 bg-white/30 backdrop-blur-md text-black px-8 py-3 rounded-full hover:bg-gray-200/100 transition-all duration-300 shadow-lg hover:shadow-xl w-41 text-center">
+                        <div className="flex flex-col sm:flex-row gap-4 md:gap-5 justify-center md:justify-start">
+                            <a href="#projects" className="border border-black/20 bg-white/30 backdrop-blur-md text-black px-6 md:px-8 py-3 rounded-full hover:bg-gray-200/100 transition-all duration-300 shadow-lg hover:shadow-xl text-center">
                                 View Projects
                             </a>
 
-                            <a href="#about" className="border border-black/20 bg-white/30 backdrop-blur-md text-black px-8 py-3 rounded-full hover:bg-gray-200/100 transition-all duration-300 shadow-lg hover:shadow-xl w-41 text-center">
+                            <a href="#about" className="border border-black/20 bg-white/30 backdrop-blur-md text-black px-6 md:px-8 py-3 rounded-full hover:bg-gray-200/100 transition-all duration-300 shadow-lg hover:shadow-xl text-center">
                                 About Me
                             </a>
                         </div>
@@ -26,13 +26,14 @@ export const Home = () => {
 
             {/* Right side - Background Image */}
             <div 
-                className="w-1/2 relative flex items-center justify-center -ml-40"
+                className="w-full md:w-1/2 relative flex items-center justify-center md:-ml-40 -mt-10 md:mt-0"
                 style={{
                     backgroundImage: 'url(/bgimage.png)',
-                    backgroundSize: '160%',
+                    backgroundSize: 'cover',
                     backgroundBlendMode: 'multiply',
                     backgroundPosition: 'center',
-                    backgroundRepeat: 'no-repeat'
+                    backgroundRepeat: 'no-repeat',
+                    minHeight: '400px'
                 }}
             />
         </section>
