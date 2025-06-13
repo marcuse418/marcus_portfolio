@@ -28,7 +28,7 @@ export const Home = () => {
             <div 
                 className="w-full md:w-1/2 relative flex items-center justify-center md:-ml-40 -mt-10 md:mt-0"
                 style={{
-                    backgroundImage: 'url(/bgimage.png)',
+                    backgroundImage: 'url(/marcus_portfolio/bgimage.png)',
                     backgroundSize: 'cover',
                     backgroundBlendMode: 'multiply',
                     backgroundPosition: 'center',

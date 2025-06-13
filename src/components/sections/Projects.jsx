@@ -6,14 +6,14 @@ export const Projects = () => {
         {
             title: "Portfolio Website",
             description: "Portfolio site project built with React, Tailwind CSS and Vite. This is primarily a learning project to practice my skills and showcase my projects. As a non-developer, this was built using various AI tools, such as bolt.ai for protoyping and cursor for developing.",
-            imageUrl: "/PortfolioSite.png",
+            imageUrl: "/marcus_portfolio/PortfolioSite.png",
             githubUrl: "https://github.com/marcuse418/portfolio_site",
             imageFit: "cover"
         },
         {
             title: "Project 2",
             description: "A brief description of your second project. Explain what it does and what technologies you used.",
-            imageUrl: "/Logo3.png",
+            imageUrl: "/marcus_portfolio/Logo3.png",
             githubUrl: "https://github.com/your-username/project-2",
             imageFit: "contain"
         }

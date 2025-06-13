@@ -11,7 +11,7 @@ export const About = () => {
                     <div className="flex flex-col md:flex-row items-center gap-6">
                         <div className="w-48 h-48 md:w-64 md:h-64 flex-shrink-0">
                             <img 
-                                src="/profilepic2.jpg" 
+                                src="/marcus_portfolio/profilepic2.jpg" 
                                 alt="Profile" 
                                 className="w-full h-full object-cover rounded-full shadow-lg hover:shadow-xl duration-300 transition-shadow"
                             />

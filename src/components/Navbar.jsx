@@ -25,7 +25,7 @@ export const Navbar = ({menuOpen, setMenuOpen}) => {
                             Marcus Elliott
                         </span>
                         <img 
-                            src="/Logo3.png"
+                            src="/marcus_portfolio/Logo3.png"
                             alt="Logo"
                             className={`absolute left-0 h-10 w-auto transition-opacity duration-300 ${isScrolled ? 'opacity-100' : 'opacity-0'}`}
                         />
