@@ -11,10 +11,10 @@ export const Projects = () => {
             imageFit: "cover"
         },
         {
-            title: "Project 2",
-            description: "A brief description of your second project. Explain what it does and what technologies you used.",
-            imageUrl: "/marcus_portfolio/Logo3.png",
-            githubUrl: "https://github.com/your-username/project-2",
+            title: "Melbourne Traffic Shiny App",
+            description: "A Shiny app that allows users to explore traffic data in Melbourne, Australia. The app is built with R and Shiny, and uses the Melbourne Open Data Portal API to fetch traffic data.",
+            imageUrl: "/marcus_portfolio/melb_shiny_app_2.png",
+            githubUrl: "https://github.com/marcuse418/melb-traffic-shiny-app",
             imageFit: "contain"
         }
     ];

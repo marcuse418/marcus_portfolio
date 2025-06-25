@@ -12,11 +12,11 @@ export const Home = () => {
                         </h1>
 
                         <div className="flex flex-col sm:flex-row gap-4 md:gap-5 justify-center md:justify-start">
-                            <a href="#projects" className="border border-black/20 bg-white/30 backdrop-blur-md text-black px-6 md:px-8 py-3 rounded-full hover:bg-gray-200/100 transition-all duration-300 shadow-lg hover:shadow-xl text-center">
+                            <a href="#projects" className="border border-black/20 bg-white backdrop-blur-md text-black px-6 md:px-8 py-3 rounded-full hover:bg-gray-200/100 transition-all duration-300 shadow-lg hover:shadow-xl text-center">
                                 View Projects
                             </a>
 
-                            <a href="#about" className="border border-black/20 bg-white/30 backdrop-blur-md text-black px-6 md:px-8 py-3 rounded-full hover:bg-gray-200/100 transition-all duration-300 shadow-lg hover:shadow-xl text-center">
+                            <a href="#about" className="border border-black/20 bg-white backdrop-blur-md text-black px-6 md:px-8 py-3 rounded-full hover:bg-gray-200/100 transition-all duration-300 shadow-lg hover:shadow-xl text-center">
                                 About Me
                             </a>
                         </div>
@@ -39,3 +39,5 @@ export const Home = () => {
         </section>
     );
 };
+
+
