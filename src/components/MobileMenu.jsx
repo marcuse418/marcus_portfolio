@@ -17,7 +17,7 @@ export const MobileMenu = ({menuOpen, setMenuOpen}) => {
                         className={`text-2xl font-semibold text-black my-4 transform transition-transform duration-300
                                 ${menuOpen ? "opacity-100 translate-y-0" : "opacity-0 translate-y-5"}`}
                     >
-                         Homerrr test
+                         Home
                     </a>
 
                     <a
