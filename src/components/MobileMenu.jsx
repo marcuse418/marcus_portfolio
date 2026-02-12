@@ -3,11 +3,11 @@ import { useEffect } from 'react';
 export const MobileMenu = ({menuOpen, setMenuOpen}) => {
 
     return (
-        <div className={`fixed top-0 left-0 w-full bg-[rgba(240, 231, 231, 0.8)] z-40 flex flex-col items-center justify-center transistion-all duration-300 ease-in-out
+        <div className={`fixed top-0 left-0 w-full bg-[rgba(240, 231, 231, 0.8)] backdrop-blur-lg z-40 flex flex-col items-center justify-center transition-all duration-300 ease-in-out
                         ${menuOpen ? "h-screen opacity-100 pointer-events-auto" : "h-0 opacity-0 pointer-events-none"}`}>
 
             <button onClick={() => setMenuOpen(false)} 
-                    className="absolute top-4 right-4 text-black text-2xl focus:outline-none cursor-pointer"
+                    className="absolute top-3 right-10 text-black text-2xl focus:outline-none cursor-pointer w-10 h-8 flex items-center justify-center"
                     aria-label="Close Menu">
                 &times;
             </button>

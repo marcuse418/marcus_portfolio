@@ -31,7 +31,7 @@ export const Navbar = ({menuOpen, setMenuOpen}) => {
                         />
                     </a>
 
-                    <div className="w-7 h-5 relative cursor-pointer z-40 md:hidden" onClick={() => setMenuOpen ((prev) => !prev)}>
+                    <div className="w-10 h-8 flex items-center justify-center relative cursor-pointer z-40 md:hidden text-2xl text-black" onClick={() => setMenuOpen ((prev) => !prev)} aria-label="Open menu">
                         &#9776;
                     </div>
 
