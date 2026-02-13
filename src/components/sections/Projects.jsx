@@ -16,6 +16,13 @@ export const Projects = () => {
             imageUrl: "/marcus_portfolio/melb_shiny_app_2.png",
             githubUrl: "https://github.com/marcuse418/melb-traffic-shiny-app",
             imageFit: "contain"
+        },
+        {
+            title: "Enhancing Predictive Analytics in Business Intelligence with AI-Generated Synthetic Data",
+            description: "A Shiny app that allows users to explore traffic data in Melbourne, Australia. The app is built with R and Shiny, and uses the Melbourne Open Data Portal API to fetch traffic data.",
+            imageUrl: "/marcus_portfolio/melb_shiny_app_2.png",
+            githubUrl: "https://github.com/marcuse418/melb-traffic-shiny-app",
+            imageFit: "contain"
         }
     ];
 
